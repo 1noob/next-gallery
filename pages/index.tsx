@@ -10,7 +10,7 @@ const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
 });
 
-const image_len = 240;
+const image_len = 160;
 
 const Home: NextPage = ({ images }: { images: ImageProps[]}) => {
 
@@ -18,7 +18,7 @@ const Home: NextPage = ({ images }: { images: ImageProps[]}) => {
     <>
       <main className={`justify-center ${jetbrainsMono.variable} font-mono`}>
         <div className="my-auto overflow-hidden w-full h-dvh grid content-center">
-          <div className="animate-[scy_180s_linear_infinite] w-max grayscale-[50%]">
+          <div className="animate-[scy_120s_linear_infinite] w-max grayscale-[50%]">
               <div className="float-left grid grid-rows-8 grid-flow-col">
                 { images.map(({public_id, format }) => (
                     <Image
